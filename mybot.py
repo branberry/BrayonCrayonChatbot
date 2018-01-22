@@ -1,17 +1,8 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
+from trainingData import getTrainingData
 
-# training data
-conversation = [
-    "Hello",
-    "Hi there!",
-    "How are you doing?",
-    "I am doing great.",
-    "You're Welcome",
-    "Good morning!",
-    "Good morning to you too!"
-]
-
+conversation = getTrainingData()
 # generating chatbot
 chatbot = ChatBot(
     "Brayon Crayon",
